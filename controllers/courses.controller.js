@@ -45,7 +45,7 @@ const addCourse = asyncWrapper(
 
 const updateCourse = asyncWrapper(
     async (req, res, next) => {
-        const courseId = +req.params.id;
+        const courseId = req.params.id;
         //return finded course not updated one if i want updated course use updateOne
         let course = await Course.findByIdAndUpdate(courseId, {
             $set: { ...req.body }
