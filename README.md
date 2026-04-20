@@ -71,3 +71,5 @@ git clone <repo-url>
 cd first-api  
 npm install  
 npm run dev  
+
+And don't forget to add your env variables!
